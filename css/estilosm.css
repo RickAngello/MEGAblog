@@ -1,25 +1,24 @@
 body
 {
     text-align: center;
-    background-color: rgb(241, 243, 247);
-    color: rgb(32, 29, 32);
+    color: black;
     font-family:sans-serif;
     margin: 10;
     padding: 10;    
 }
 strong
 {
-    color:rgb(31, 14, 95); 
+    color: #004; 
 }
 #cabecera 
 {
-    background-color:rgb(122, 68, 223);
+    background-color: #004A85;
     box-shadow: 0pc 2px 20px 0px rgb(41, 41, 41);
-    color: white;
+    color: #F2F2F2;
     font-weight: bold;
     margin: 0;
     padding: 0.5em;
-    font-size: 24px;
+    font-size: 28px;
 }
 #cabecera #logo
 {
@@ -34,20 +33,88 @@ strong
 }
 #container 
 {
-    background-color: rgb(253, 253, 253);
+    background-color: transparent;
     width: 70%;
     padding: lem;
     text-align: left;
     border: 1px solid rgb(141, 141, 141);
     margin: 0 auto;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: roboto;
 }
 #container h1
 {
-    color: rgb(75, 0, 146);
+    color: #004A85;
     font-size: 28px;
 }
 #post
 {
     border: white;
 }
+#hero {
+    display: table;
+    width: 100%;
+    height: 100vh;
+    background: url(../img/megabloglogo.png) top center fixed;
+    background-size: cover;
+  }
+  
+  #hero .hero-logo img {
+    max-width: 100%;
+  }
+  
+  #hero .hero-container {
+    background: rgba(0, 0, 0, 0.63);
+    display: table-cell;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+  }
+  
+  #hero h1 {
+    margin: 30px 0 10px 0;
+    font-weight: 700;
+    line-height: 48px;
+    text-transform: uppercase;
+    color: #fff;
+  }
+  
+  #hero h2 {
+    color: rgb(2, 2, 2);
+    margin-bottom: 100px;
+  }
+ 
+  #hero .actions a {
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 2px;
+    transition: 0.5s;
+    margin: 10px;
+  }
+  
+  #hero .btn-get-started {
+    background: #03C4EB;
+    border: 2px solid #03C4EB;
+    color: #fff;
+  }
+  
+  #hero .btn-get-started:hover {
+    background: none;
+    border: 2px solid #fff;
+    color: #fff;
+  }
+  
+  #hero .btn-services {
+    border: 2px solid #fff;
+    color: #fff;
+  }
+  
+  #hero .btn-services:hover {
+    background: #03C4EB;
+    border: 2px solid #03C4EB;
+  }

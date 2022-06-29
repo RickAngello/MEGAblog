@@ -1,5 +1,6 @@
 <!DOCTYPE html><!-- primero que todo, Dios te ama :3, segundo sal de aqui -->
-<html lang="en"><!-- un comentario para saber como se escriben comentarios -->
+<html lang="es"><!-- un comentario para saber como se escriben comentarios -->
+
     <head>
         <meta charset="UTF-8"> <!-- Esto es para poder colocar tildes, charset es una coleccion de caracteres-->
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +8,29 @@
         <title> Megablog.com</title>
         <link rel="stylesheet" href="css/estilosm.css" />
     </head>
+
     <body>
-        <img id="logo" src="imagenes/megabloglogo.png" />
+        <div id="preloader"></div>
+
+        <!--==========================
+        La portada de megablog - hero
+        ============================-->
+        <section id="hero">
+            <div class="hero-container">
+              <div class="wow fadeIn">
+                <div class="hero-logo">
+                  <img class="" src="img/megacon.png">
+                </div>
+                <h1>Bienvenidos a MegaBlog</h1>
+                <h2>¿Qué encontraras acá? <br><span class="rotating">Aplicaciones cool, mi apoyo, mi ayuda, entre muchas cosas mas. <br> Quedate y aprendamos juntos. </span></h2>
+                <div class="actions">
+                  <a href="#about" class="btn-get-started">Comencemos</a>
+                  <a href="#services" class="btn-services">Otros Servicios</a>
+                </div>
+              </div>
+            </div>
+          </section>
+
         <div id="container">
              <div id="cabecera">
                  <img id="logo" src="imagenes/megabloglogo.png" />
@@ -25,15 +47,20 @@
         </div>
         <div id="container">
             <div id="cabecera">
-                <img id="logo" src="imagenes/megabloglogo.png" />
-                Qué queremos? 
-                <span id="tagline"> No sabemos pero acompañanos a descubrirlo...</span>
-            </div>
-        <h1><strong> Apasionados por aprender cosas nuevas. </strong></h1>
-        <p1> Vamos a hacer cosas y despues las iremos organizando. </p1>
-        <h2><strong>TU PESO EN OTRO PLANETA.</strong></h2>
-        <p> No en todos los planetas pesas lo mismo!, acompañame y vamos a ver cuanto pesas en otros planetas.</p>
-        <p> vamos a ver cuanto pesas en otros planetas deacuerdo a tu peso en la tierra.</p>
+                <img id="logo" src="imagenes/megabloglogo.png" /> TU PESO EN OTRO PLANETA.
+                <span id="tagline"> No en todos los planetas pesas lo mismo!</span>
+            </div>      
+        <p>Acompañame y vamos a ver cuanto pesas en otros planetas. Vamos a ver cuanto pesas en otros planetas deacuerdo a tu peso en la tierra.</p>
+        <p>Vamos a pedirte unos datos primero :D</p>
+        <form>
+            <!-- <label for="nombre">Cuál es tu nombre?</label> el label es para decirle a html que queremos nosotros del usuario, y for es para saber cual va a ser su foco-->
+            <!--<input type="text" id="nombre" name="nombre"> input tiene valores muy interesantes, email, para email, password oculta los valores, radio se vuelve en una bolita, checkbox en una casilla para estripar, file para cargar archivos-->
+            <label for="peso">Cuál es tu peso actual?</label> <br>
+            <input type="number" id="pesousuario" name="peso"> <br>
+            <label for="planeta">En que planeta quieres saber tu peso. Escoge 1 para Marte y 2 para Jupiter</label> <br>
+            <input type="number" id="planeta" name="planeta">
+            <input type="button" id="botoncito" value="A darle!!">
+        </form>
         <script src="js/notas.js"></script>
     </div>
     </body>
